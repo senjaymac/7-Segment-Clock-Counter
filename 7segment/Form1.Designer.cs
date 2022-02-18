@@ -76,6 +76,8 @@
             this.SLB6 = new System.Windows.Forms.Button();
             this.SLB1 = new System.Windows.Forms.Button();
             this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.themeBtn = new System.Windows.Forms.Button();
+            this.themeBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // HLB1
@@ -86,6 +88,7 @@
             this.HLB1.Name = "HLB1";
             this.HLB1.Size = new System.Drawing.Size(75, 25);
             this.HLB1.TabIndex = 0;
+            this.HLB1.TabStop = false;
             this.HLB1.UseVisualStyleBackColor = false;
             // 
             // HLB6
@@ -96,6 +99,7 @@
             this.HLB6.Name = "HLB6";
             this.HLB6.Size = new System.Drawing.Size(75, 25);
             this.HLB6.TabIndex = 1;
+            this.HLB6.TabStop = false;
             this.HLB6.UseVisualStyleBackColor = false;
             // 
             // HLB4
@@ -106,6 +110,7 @@
             this.HLB4.Name = "HLB4";
             this.HLB4.Size = new System.Drawing.Size(75, 25);
             this.HLB4.TabIndex = 2;
+            this.HLB4.TabStop = false;
             this.HLB4.UseVisualStyleBackColor = false;
             // 
             // HLB3
@@ -116,6 +121,7 @@
             this.HLB3.Name = "HLB3";
             this.HLB3.Size = new System.Drawing.Size(25, 75);
             this.HLB3.TabIndex = 3;
+            this.HLB3.TabStop = false;
             this.HLB3.UseVisualStyleBackColor = false;
             // 
             // HLB5
@@ -126,6 +132,7 @@
             this.HLB5.Name = "HLB5";
             this.HLB5.Size = new System.Drawing.Size(25, 75);
             this.HLB5.TabIndex = 4;
+            this.HLB5.TabStop = false;
             this.HLB5.UseVisualStyleBackColor = false;
             // 
             // HLB2
@@ -136,6 +143,7 @@
             this.HLB2.Name = "HLB2";
             this.HLB2.Size = new System.Drawing.Size(25, 75);
             this.HLB2.TabIndex = 5;
+            this.HLB2.TabStop = false;
             this.HLB2.UseVisualStyleBackColor = false;
             // 
             // HLB7
@@ -147,6 +155,7 @@
             this.HLB7.Name = "HLB7";
             this.HLB7.Size = new System.Drawing.Size(25, 75);
             this.HLB7.TabIndex = 6;
+            this.HLB7.TabStop = false;
             this.HLB7.UseVisualStyleBackColor = false;
             // 
             // HRB7
@@ -541,7 +550,31 @@
             // 
             // Timer
             // 
+            this.Timer.Enabled = true;
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // themeBtn
+            // 
+            this.themeBtn.Location = new System.Drawing.Point(335, 314);
+            this.themeBtn.Name = "themeBtn";
+            this.themeBtn.Size = new System.Drawing.Size(75, 23);
+            this.themeBtn.TabIndex = 47;
+            this.themeBtn.Text = "button1";
+            this.themeBtn.UseVisualStyleBackColor = true;
+            this.themeBtn.Click += new System.EventHandler(this.themeBtn_Click);
+            // 
+            // themeBox
+            // 
+            this.themeBox.FormattingEnabled = true;
+            this.themeBox.Items.AddRange(new object[] {
+            "Black and Yellow",
+            "2",
+            "3"});
+            this.themeBox.Location = new System.Drawing.Point(335, 344);
+            this.themeBox.Name = "themeBox";
+            this.themeBox.Size = new System.Drawing.Size(120, 95);
+            this.themeBox.TabIndex = 48;
+            this.themeBox.SelectedIndexChanged += new System.EventHandler(this.themeBox_SelectedIndexChanged);
             // 
             // Base
             // 
@@ -549,6 +582,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1137, 436);
+            this.Controls.Add(this.themeBox);
+            this.Controls.Add(this.themeBtn);
             this.Controls.Add(this.SRB7);
             this.Controls.Add(this.SRB2);
             this.Controls.Add(this.SRB5);
@@ -652,6 +687,8 @@
         private System.Windows.Forms.Button SLB6;
         private System.Windows.Forms.Button SLB1;
         private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Button themeBtn;
+        private System.Windows.Forms.ListBox themeBox;
     }
 }
 

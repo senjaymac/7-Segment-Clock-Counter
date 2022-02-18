@@ -15,7 +15,55 @@ namespace _7segment
 
         public DateTime time;
         public string hour, min, sec, hour1, hour2, min1, min2, sec1, sec2;
-        public Color timeColor = Color.Red, backColor = Color.Black;
+        public Color timeColor = Color.Yellow, backColor = Color.Black;
+
+
+        private void themeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Button[] buttonDot = new Button[4] { S1, S2, S3, S4 };
+            themeBtn.Text = themeBox.SelectedItem.ToString();
+            switch (themeBox.SelectedIndex)
+            {
+                case 0:
+                    timeColor = Color.Black;
+                    backColor = Color.Pink;
+                    this.BackColor = backColor;
+                    break;
+                case 1:
+                    timeColor = Color.Yellow;
+                    backColor = Color.Black;
+                    this.BackColor = backColor;
+                    break;
+                case 2:
+                    timeColor = Color.Black;
+                    backColor = Color.White;
+                    this.BackColor = backColor;
+                    break;
+
+            }
+            foreach (Button but in buttonDot)
+            {
+                but.BackColor = timeColor;
+            }
+            themeBox.Visible = false;
+        }
+
+        private void themeBtn_Click(object sender, EventArgs e)
+        {
+            if (themeBox.Visible)
+            {
+                themeBox.Visible = false;
+            }
+            else
+            {
+                themeBox.Visible = true;
+            }
+        }
+
+
+
+
+
 
 
 
