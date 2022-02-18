@@ -1,0 +1,11 @@
+C:\Users\Senon\Documents\Repositories\7segment\7segment\bin\Debug\7segment.exe.config
+C:\Users\Senon\Documents\Repositories\7segment\7segment\bin\Debug\7segment.exe
+C:\Users\Senon\Documents\Repositories\7segment\7segment\bin\Debug\7segment.pdb
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.csproj.AssemblyReference.cache
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.csproj.SuggestedBindingRedirects.cache
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\_7segment.Properties.Resources.resources
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.csproj.GenerateResource.cache
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.csproj.CoreCompileInputs.cache
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.exe
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\7segment.pdb
+C:\Users\Senon\Documents\Repositories\7segment\7segment\obj\Debug\_7segment.Base.resources
