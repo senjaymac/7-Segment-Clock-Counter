@@ -25,8 +25,8 @@ namespace _7segment
             switch (themeBox.SelectedIndex)
             {
                 case 0:
-                    timeColor = Color.Black;
-                    backColor = Color.Pink;
+                    timeColor = Color.Pink;
+                    backColor = Color.Black;
                     this.BackColor = backColor;
                     break;
                 case 1:
@@ -35,8 +35,8 @@ namespace _7segment
                     this.BackColor = backColor;
                     break;
                 case 2:
-                    timeColor = Color.Black;
-                    backColor = Color.White;
+                    timeColor = Color.White;
+                    backColor = Color.Black;
                     this.BackColor = backColor;
                     break;
 
